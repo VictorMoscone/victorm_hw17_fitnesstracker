@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness_db", {
   useUnifiedTopology: true
 });
 
-app.use(require("./routes/api.js"));
-app.use(require("./routes/html-route.js"));
+require('./routes/api.js')(app);
+require('./routes/html-route.js')(app);
 
 app.listen(PORT, () => {
   console.log(`App running on port http://localhost:${PORT}`);
