@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+// let db = require("../models");
 
 const PORT = process.env.PORT || 5000;
 
@@ -10,10 +11,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/db_name", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness_db", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
+});
 
 // app.use(require("./routes/api-route.js"));
 // app.use(require("./routes/html-route.js"));
