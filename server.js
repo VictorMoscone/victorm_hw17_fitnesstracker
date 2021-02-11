@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const db = require("./models/fitness")
 
 const PORT = process.env.PORT || 5000;
 
@@ -16,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness_db", {
   useUnifiedTopology: true
 });
 
-// app.use(require("./routes/api.js"));
+app.use(require("./routes/api.js"));
 app.use(require("./routes/html-route.js"));
 
 app.listen(PORT, () => {
