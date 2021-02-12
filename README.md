@@ -1,61 +1,88 @@
-# Unit 17 NoSQL Homework: Workout Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## User Story
+# 17 Victor Moscone's Fitness Tracker - HW17
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Gettin' fit one app at a time
 
-## Business Context
+**A quick description**: This app allows the user to store workout sessions and then view the aggregate data together, including statistics on the duration of that session.
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+## Table of Contents
 
-## Acceptance Criteria
+* [Reflection](#Reflection)
+* [Setup Instructions](#Setup-Instructions)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
+* [Credits](#Credits)
+* [License](#License)
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+[Click me to visit the app!](https://victorm-hw17-fitnesstracker.herokuapp.com/)
 
-The user should be able to:
+## Reflection
 
-  * Add exercises to the most recent workout plan.
+This was another very challenging assignment. It's weird in that, now that I'm mostly done, I see how easy it *could* have been, had I known what I was doing. But I spent so much time with trial and error that it got demoralizing. 
 
-  * Add new exercises to a new workout plan.
+Fortunately, my understanding of routing with mongoose has improved, although only slightly. Since we didn't technically start from scratch, I don't feel like I 100% have mastered routing with mongoose and MongoDB - so those are some potential growth opportunities for the future.
 
-  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+## Setup Instructions
 
-  * View the total duration of each workout from the past seven workouts on the `stats` page.
+---
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+1. None! Just visit [this link!](https://victorm-hw17-fitnesstracker.herokuapp.com/)
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+---
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+### **Usage**
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+* Primary Usage: View/Add departments, roles and employees to your org.
+* Seen below -
 
-## Commit Early and Often
+Screenshots pending.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+### **Contributing**
 
-Follow these guidelines for committing:
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+### **Tests**
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+1. N/A
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+### **Questions**
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+[My GitHub Profile](https://github.com/VictorMoscone)
+My Email Information: N/A
 
-We want you to have well over 200 commits by graduation, so commit early and often!
+### **Credits** 
 
-## Submission on BCS
+* https://mongoosejs.com/docs/api.html#aggregate_Aggregate
+* [Vincent Gines](https://github.com/vgines73) for providing assistance troubleshooting 
 
-You are required to submit the following:
+- - -
+### **License**
+© 2021 Victor Moscone. All Rights Reserved.
 
-* The URL to the deployed application
 
-* The URL to the GitHub repository
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
